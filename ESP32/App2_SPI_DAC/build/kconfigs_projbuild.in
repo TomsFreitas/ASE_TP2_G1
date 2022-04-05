@@ -1,0 +1,6 @@
+source "/home/toms/esp/esp-idf/components/app_update/Kconfig.projbuild"
+source "/home/toms/esp/esp-idf/components/bootloader/Kconfig.projbuild"
+source "/home/toms/esp/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "/home/toms/esp/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "/home/toms/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+source "/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/main/Kconfig.projbuild"
