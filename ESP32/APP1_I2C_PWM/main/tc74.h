@@ -12,7 +12,7 @@
 
 // Defintions
 
-static const char *TAG = "TC74";
+//static const char *TAG = "TC74";
 
 #define TC74_SLAVE_ADDR_A0   0x48
 #define TC74_SLAVE_ADDR_A1   0x49

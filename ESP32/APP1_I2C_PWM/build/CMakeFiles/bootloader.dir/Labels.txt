@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/saudade/Desktop/ASE/ASE_TP2_G1/ESP32/APP1_I2C_PWM/build/CMakeFiles/bootloader
+/home/saudade/Desktop/ASE/ASE_TP2_G1/ESP32/APP1_I2C_PWM/build/CMakeFiles/bootloader.rule
+/home/saudade/Desktop/ASE/ASE_TP2_G1/ESP32/APP1_I2C_PWM/build/CMakeFiles/bootloader-complete.rule
+/home/saudade/Desktop/ASE/ASE_TP2_G1/ESP32/APP1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/saudade/Desktop/ASE/ASE_TP2_G1/ESP32/APP1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/saudade/Desktop/ASE/ASE_TP2_G1/ESP32/APP1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/saudade/Desktop/ASE/ASE_TP2_G1/ESP32/APP1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/saudade/Desktop/ASE/ASE_TP2_G1/ESP32/APP1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/saudade/Desktop/ASE/ASE_TP2_G1/ESP32/APP1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/saudade/Desktop/ASE/ASE_TP2_G1/ESP32/APP1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
