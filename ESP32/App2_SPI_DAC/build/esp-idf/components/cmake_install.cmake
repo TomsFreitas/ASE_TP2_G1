@@ -1,4 +1,4 @@
-# Install script for directory: /home/toms/esp/esp-idf/examples/common_components/led_strip
+# Install script for directory: /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/components
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

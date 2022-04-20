@@ -159,7 +159,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=blink
+CMAKE_PROJECT_NAME:STATIC=main
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/home/toms/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib
@@ -296,6 +296,9 @@ __idf_cmock_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__
 __idf_coap_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
 
 //Dependencies for the target
+__idf_components_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
+
+//Dependencies for the target
 __idf_console_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp32;
 
 //Dependencies for the target
@@ -407,9 +410,6 @@ __idf_jsmn_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__i
 __idf_json_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
 
 //Dependencies for the target
-__idf_led_strip_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
-
-//Dependencies for the target
 __idf_libsodium_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
 
 //Dependencies for the target
@@ -494,16 +494,16 @@ __idf_wpa_supplicant_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;g
 __idf_xtensa_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp32;general;/home/toms/esp/esp-idf/components/xtensa/esp32/libxt_hal.a;
 
 //Value Computed by CMake
-blink_BINARY_DIR:STATIC=/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build
-
-//Value Computed by CMake
-blink_SOURCE_DIR:STATIC=/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC
-
-//Value Computed by CMake
 esp-idf_BINARY_DIR:STATIC=/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf
 
 //Value Computed by CMake
 esp-idf_SOURCE_DIR:STATIC=/home/toms/esp/esp-idf
+
+//Value Computed by CMake
+main_BINARY_DIR:STATIC=/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build
+
+//Value Computed by CMake
+main_SOURCE_DIR:STATIC=/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC
 
 //Value Computed by CMake
 mbed TLS_BINARY_DIR:STATIC=/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/mbedtls/mbedtls

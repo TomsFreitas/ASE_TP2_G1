@@ -122,7 +122,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/ulp/cmake_install.cmake")
   include("/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/wifi_provisioning/cmake_install.cmake")
   include("/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/main/cmake_install.cmake")
-  include("/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/cmake_install.cmake")
+  include("/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/components/cmake_install.cmake")
 
 endif()
 
