@@ -26,7 +26,7 @@ def play(pin, melodies, delays, duty):
         pwm.duty(0)
         # Disconnect the pwm driver
         pwm.deinit()
-        deepsleep(10000)
+        deepsleep(10000) #deepsleep for 10 seconds as a way of power managment
 
 def read_uart():
     while True:
