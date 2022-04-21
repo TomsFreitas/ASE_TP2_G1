@@ -2010,70 +2010,34 @@
     {
         "children": [
             {
-                "children": [
-                    {
-                        "children": [],
-                        "depends_on": "<choice BLINK_LED>",
-                        "help": null,
-                        "id": "BLINK_LED_GPIO",
-                        "name": "BLINK_LED_GPIO",
-                        "range": null,
-                        "title": "GPIO",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "<choice BLINK_LED>",
-                        "help": null,
-                        "id": "BLINK_LED_RMT",
-                        "name": "BLINK_LED_RMT",
-                        "range": null,
-                        "title": "RMT - Addressable LED",
-                        "type": "bool"
-                    }
-                ],
-                "depends_on": null,
-                "help": "Defines the default peripheral for blink example",
-                "id": "example-configuration-blink-led-type",
-                "name": "BLINK_LED",
-                "title": "Blink LED type",
-                "type": "choice"
-            },
-            {
                 "children": [],
-                "depends_on": "BLINK_LED_RMT",
-                "help": "Set the RMT peripheral channel.\nESP32 RMT channel from 0 to 7\nESP32-S2 RMT channel from 0 to 3\nESP32-S3 RMT channel from 0 to 3\nESP32-C3 RMT channel from 0 to 1",
-                "id": "BLINK_LED_RMT_CHANNEL",
-                "name": "BLINK_LED_RMT_CHANNEL",
+                "depends_on": "SPI_FLASH_SHARE_SPI1_BUS",
+                "help": "Enable this option will make the EEPROM use SPI1 pins, which is shared with the main\nflash chip.\n\nCurrently this example hasn't supported SPI1 pins on other chips yet.",
+                "id": "EXAMPLE_USE_SPI1_PINS",
+                "name": "EXAMPLE_USE_SPI1_PINS",
                 "range": null,
-                "title": "RMT Channel",
-                "type": "int"
+                "title": "The example uses SPI1 shared pins for EEPROM connection",
+                "type": "bool"
+            },
+            {
+                "children": [],
+                "depends_on": "!EXAMPLE_USE_SPI1_PINS",
+                "help": "Enable this option will allow the example to be blocked while the EEPROM is working\nin progress, and unblocked by GPIO interrupt. Otherwise the example will keep polling\nuntil the EEPROM is idle.",
+                "id": "EXAMPLE_INTR_USED",
+                "name": "EXAMPLE_INTR_USED",
+                "range": null,
+                "title": "Use the interrupt to detect the eeprom busy",
+                "type": "bool"
             },
             {
                 "children": [],
                 "depends_on": null,
-                "help": "GPIO number (IOxx) to blink on and off or the RMT signal for the addressable LED.\nSome GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.",
-                "id": "BLINK_GPIO",
-                "name": "BLINK_GPIO",
-                "range": [
-                    0,
-                    48
-                ],
-                "title": "Blink GPIO number",
-                "type": "int"
-            },
-            {
-                "children": [],
-                "depends_on": null,
-                "help": "Define the blinking period in milliseconds.",
-                "id": "BLINK_PERIOD",
-                "name": "BLINK_PERIOD",
-                "range": [
-                    10,
-                    3600000
-                ],
-                "title": "Blink period in ms",
-                "type": "int"
+                "help": "The Erase_All and Write_All commands of EEPROM are only supported when EEPROM is\nsupplied by 5V power. Enable this to use those two commands.\n\nBut please note that ESP chips don't support 5V IO, you need to add external\nlevel-shifting circuits between ESP chip to the EEPROM.",
+                "id": "EXAMPLE_5V_COMMANDS",
+                "name": "EXAMPLE_5V_COMMANDS",
+                "range": null,
+                "title": "The EEPROM is supplied by 5V power",
+                "type": "bool"
             }
         ],
         "depends_on": null,

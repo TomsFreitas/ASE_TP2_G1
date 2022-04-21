@@ -1,46 +1,32 @@
 menu "Example Configuration"
 
-    choice BLINK_LED
-        prompt "Blink LED type"
-        default BLINK_LED_GPIO if IDF_TARGET_ESP32
-        default BLINK_LED_RMT
+    config EXAMPLE_USE_SPI1_PINS
+        bool "The example uses SPI1 shared pins for EEPROM connection"
+        default n
+        depends on SPI_FLASH_SHARE_SPI1_BUS
         help
-            Defines the default peripheral for blink example
+            Enable this option will make the EEPROM use SPI1 pins, which is shared with the main
+            flash chip.
 
-        config BLINK_LED_GPIO
-            bool "GPIO"
-        config BLINK_LED_RMT
-            bool "RMT - Addressable LED"
-    endchoice
+            Currently this example hasn't supported SPI1 pins on other chips yet.
 
-    config BLINK_LED_RMT_CHANNEL
-        depends on BLINK_LED_RMT
-        int "RMT Channel"
-        range 0 7
-        default 0
+    config EXAMPLE_INTR_USED
+        bool "Use the interrupt to detect the eeprom busy"
+        default y
+        depends on !EXAMPLE_USE_SPI1_PINS
         help
-            Set the RMT peripheral channel.
-            ESP32 RMT channel from 0 to 7
-            ESP32-S2 RMT channel from 0 to 3
-            ESP32-S3 RMT channel from 0 to 3
-            ESP32-C3 RMT channel from 0 to 1
+            Enable this option will allow the example to be blocked while the EEPROM is working
+            in progress, and unblocked by GPIO interrupt. Otherwise the example will keep polling
+            until the EEPROM is idle.
 
-    config BLINK_GPIO
-        int "Blink GPIO number"
-        range 0 48
-        default 8 if IDF_TARGET_ESP32C3 || IDF_TARGET_ESP32H2
-        default 18 if IDF_TARGET_ESP32S2
-        default 48 if IDF_TARGET_ESP32S3
-        default 5
+    config EXAMPLE_5V_COMMANDS
+        bool "The EEPROM is supplied by 5V power"
+        default n
         help
-            GPIO number (IOxx) to blink on and off or the RMT signal for the addressable LED.
-            Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.
+            The Erase_All and Write_All commands of EEPROM are only supported when EEPROM is
+            supplied by 5V power. Enable this to use those two commands.
 
-    config BLINK_PERIOD
-        int "Blink period in ms"
-        range 10 3600000
-        default 1000
-        help
-            Define the blinking period in milliseconds.
+            But please note that ESP chips don't support 5V IO, you need to add external
+            level-shifting circuits between ESP chip to the EEPROM.
 
 endmenu

@@ -1,5 +1,9 @@
 {
-    "idf.adapterTargetName": "esp32",
-    "idf.port": "/dev/ttyUSB0",
-    "idf.flashType": "UART"
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "idf.flashType": "UART",
+  "idf.port": "/dev/ttyUSB0",
+  "idf.adapterTargetName": "esp32",
+  "files.associations": {
+    "dac.h": "c"
+  }
 }

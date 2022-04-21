@@ -1,4 +1,3 @@
-/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/install/local.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/install.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/install/strip.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/list_install_components.dir
@@ -8,9 +7,10 @@
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/uf2-app.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/size-components.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/size.dir
+/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/install/local.dir
+/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/main.elf.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/gen_project_binary.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/edit_cache.dir
-/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/blink.elf.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/_project_elf_src.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/confserver.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/flash.dir
@@ -670,10 +670,10 @@
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/main/CMakeFiles/install.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/main/CMakeFiles/__idf_main.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/main/CMakeFiles/list_install_components.dir
-/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/CMakeFiles/install/strip.dir
-/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/CMakeFiles/install/local.dir
-/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/CMakeFiles/__idf_led_strip.dir
-/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/CMakeFiles/rebuild_cache.dir
-/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/CMakeFiles/edit_cache.dir
-/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/CMakeFiles/install.dir
-/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/CMakeFiles/list_install_components.dir
+/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/components/CMakeFiles/install/strip.dir
+/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/components/CMakeFiles/install/local.dir
+/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/components/CMakeFiles/__idf_components.dir
+/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/components/CMakeFiles/install.dir
+/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/components/CMakeFiles/list_install_components.dir
+/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/components/CMakeFiles/edit_cache.dir
+/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/components/CMakeFiles/rebuild_cache.dir
