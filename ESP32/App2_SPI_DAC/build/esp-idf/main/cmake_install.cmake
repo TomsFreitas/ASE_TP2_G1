@@ -1,4 +1,4 @@
-# Install script for directory: /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/main
+# Install script for directory: /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/toms/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump")
+  set(CMAKE_OBJDUMP "/home/saudade/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump")
 endif()
 

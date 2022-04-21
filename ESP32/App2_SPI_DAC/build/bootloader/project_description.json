@@ -1,8 +1,8 @@
 {
     "project_name":       "bootloader",
-    "project_path":       "/home/toms/esp/esp-idf/components/bootloader/subproject",
-    "build_dir":          "/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/bootloader",
-    "config_file":        "/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/sdkconfig",
+    "project_path":       "/home/saudade/esp/esp-idf/components/bootloader/subproject",
+    "build_dir":          "/home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/bootloader",
+    "config_file":        "/home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/sdkconfig",
     "config_defaults":    "",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",
@@ -13,9 +13,9 @@
     "monitor_baud" :      "115200",
     "monitor_toolprefix": "xtensa-esp32-elf-",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/home/toms/esp/esp-idf/components/efuse/Kconfig;/home/toms/esp/esp-idf/components/esp32/Kconfig;/home/toms/esp/esp-idf/components/esp_common/Kconfig;/home/toms/esp/esp-idf/components/esp_hw_support/Kconfig;/home/toms/esp/esp-idf/components/esp_system/Kconfig;/home/toms/esp/esp-idf/components/freertos/Kconfig;/home/toms/esp/esp-idf/components/hal/Kconfig;/home/toms/esp/esp-idf/components/log/Kconfig;/home/toms/esp/esp-idf/components/newlib/Kconfig;/home/toms/esp/esp-idf/components/spi_flash/Kconfig",
-        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/toms/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/toms/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/home/toms/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/toms/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+        "COMPONENT_KCONFIGS" : "/home/saudade/esp/esp-idf/components/efuse/Kconfig;/home/saudade/esp/esp-idf/components/esp32/Kconfig;/home/saudade/esp/esp-idf/components/esp_common/Kconfig;/home/saudade/esp/esp-idf/components/esp_hw_support/Kconfig;/home/saudade/esp/esp-idf/components/esp_system/Kconfig;/home/saudade/esp/esp-idf/components/freertos/Kconfig;/home/saudade/esp/esp-idf/components/hal/Kconfig;/home/saudade/esp/esp-idf/components/log/Kconfig;/home/saudade/esp/esp-idf/components/newlib/Kconfig;/home/saudade/esp/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/saudade/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/saudade/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/home/saudade/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/saudade/esp/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
-    "build_component_paths" : [ "/home/toms/esp/esp-idf/components/bootloader", "/home/toms/esp/esp-idf/components/bootloader_support", "/home/toms/esp/esp-idf/components/efuse", "/home/toms/esp/esp-idf/components/esp32", "/home/toms/esp/esp-idf/components/esp_common", "/home/toms/esp/esp-idf/components/esp_hw_support", "/home/toms/esp/esp-idf/components/esp_rom", "/home/toms/esp/esp-idf/components/esp_system", "/home/toms/esp/esp-idf/components/esptool_py", "/home/toms/esp/esp-idf/components/freertos", "/home/toms/esp/esp-idf/components/hal", "/home/toms/esp/esp-idf/components/log", "/home/toms/esp/esp-idf/components/bootloader/subproject/main", "/home/toms/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "/home/toms/esp/esp-idf/components/newlib", "/home/toms/esp/esp-idf/components/partition_table", "/home/toms/esp/esp-idf/components/soc", "/home/toms/esp/esp-idf/components/spi_flash", "/home/toms/esp/esp-idf/components/xtensa", "" ]
+    "build_component_paths" : [ "/home/saudade/esp/esp-idf/components/bootloader", "/home/saudade/esp/esp-idf/components/bootloader_support", "/home/saudade/esp/esp-idf/components/efuse", "/home/saudade/esp/esp-idf/components/esp32", "/home/saudade/esp/esp-idf/components/esp_common", "/home/saudade/esp/esp-idf/components/esp_hw_support", "/home/saudade/esp/esp-idf/components/esp_rom", "/home/saudade/esp/esp-idf/components/esp_system", "/home/saudade/esp/esp-idf/components/esptool_py", "/home/saudade/esp/esp-idf/components/freertos", "/home/saudade/esp/esp-idf/components/hal", "/home/saudade/esp/esp-idf/components/log", "/home/saudade/esp/esp-idf/components/bootloader/subproject/main", "/home/saudade/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "/home/saudade/esp/esp-idf/components/newlib", "/home/saudade/esp/esp-idf/components/partition_table", "/home/saudade/esp/esp-idf/components/soc", "/home/saudade/esp/esp-idf/components/spi_flash", "/home/saudade/esp/esp-idf/components/xtensa", "" ]
 }
