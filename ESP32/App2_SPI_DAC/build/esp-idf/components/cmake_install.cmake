@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream:ESP32/App2_SPI_DAC/build/esp-idf/components/cmake_install.cmake
 # Install script for directory: /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/components
+=======
+# Install script for directory: /home/saudade/esp/esp-idf/examples/common_components/led_strip
+>>>>>>> Stashed changes:ESP32/App2_SPI_DAC/build/esp-idf/led_strip/cmake_install.cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +38,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/toms/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump")
+  set(CMAKE_OBJDUMP "/home/saudade/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump")
 endif()
 

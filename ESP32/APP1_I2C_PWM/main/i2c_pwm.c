@@ -30,7 +30,7 @@ static const char *TAG = "I2C_PWM application example";
 
 
 
-static esp_err_t timer_config(ledc_channel_config_t *ledc_channel) {
+static void timer_config() {
 
     // Prepare and then apply the LEDC PWM timer configuration
     ledc_timer_config_t ledc_timer = {
@@ -41,51 +41,51 @@ static esp_err_t timer_config(ledc_channel_config_t *ledc_channel) {
         .clk_cfg          = LEDC_AUTO_CLK
     };
 
-    // Prepare and then apply the LEDC PWM channel configuration
-    ledc_channel->speed_mode     = LEDC_MODE;
-    ledc_channel->channel        = LEDC_CHANNEL;
-    ledc_channel->timer_sel      = LEDC_TIMER;  
-    ledc_channel->intr_type      = LEDC_INTR_DISABLE;
-    ledc_channel->gpio_num       = LEDC_OUTPUT_IO;
-    ledc_channel->duty           = 0; // Set duty to 0%
-    ledc_channel->hpoint         = 0;
+    ledc_timer_config(&ledc_timer);
 
-    return ledc_channel_config(ledc_channel);     
+    ledc_channel_config_t ledc_channel = {
+        // Prepare and then apply the LEDC PWM channel configuration
+        .speed_mode     = LEDC_MODE,
+        .channel        = LEDC_CHANNEL,
+        .timer_sel      = LEDC_TIMER, 
+        .intr_type      = LEDC_INTR_DISABLE,
+        .gpio_num       = LEDC_OUTPUT_IO,
+        .duty           = 0, // Set duty to 0%
+        .hpoint         = 0
+
+    };
+    ledc_channel_config(&ledc_channel);      
 }
 
 
 void app_main(void)
 {   
 
-    ledc_channel_config_t ledc_channel;
+    // setup the sensor
+    ESP_ERROR_CHECK(i2c_master_init());
 
     uint8_t temperature_value;
     uint8_t operation_mode;
 
-    uint8_t initial_temp = 21;
-    uint32_t dt; 
-
-    // setup the sensor
-    ESP_ERROR_CHECK(i2c_master_init());
-
-    // i2c_master_read_tc74_config(I2C_MASTER_NUM,&operation_mode);
-    // // ESP_LOGI(TAG,"Operation mode is : %d",operation_mode);
-    // // set normal mode for testing (200uA consuption)
-    // i2c_master_set_tc74_mode(I2C_MASTER_NUM, SET_NORM_OP_VALUE);
-    // vTaskDelay(250 / portTICK_RATE_MS);
-    // i2c_master_read_temp(I2C_MASTER_NUM,&initial_temp);
-    // ESP_LOGI(TAG,"Initial Temperature is : %d",initial_temp);
-
-    // i2c_master_read_tc74_config(I2C_MASTER_NUM,&operation_mode);
-    // // ESP_LOGI(TAG,"Operation mode is : %d",operation_mode);
-    // // set standby mode for testing (5uA consuption)
-    // i2c_master_set_tc74_mode(I2C_MASTER_NUM, SET_STANBY_VALUE);
-
+    uint8_t initial_temp;
+    i2c_master_read_tc74_config(I2C_MASTER_NUM,&operation_mode);
+    // ESP_LOGI(TAG,"Operation mode is : %d",operation_mode);
+    // set normal mode for testing (200uA consuption)
+    i2c_master_set_tc74_mode(I2C_MASTER_NUM, SET_NORM_OP_VALUE);
+    vTaskDelay(250 / portTICK_RATE_MS);
+    i2c_master_read_temp(I2C_MASTER_NUM,&initial_temp);
+    ESP_LOGI(TAG,"Initial Temperature is : %d",initial_temp);
+    i2c_master_read_tc74_config(I2C_MASTER_NUM,&operation_mode);
+    // ESP_LOGI(TAG,"Operation mode is : %d",operation_mode);
+    // set standby mode for testing (5uA consuption)
+    i2c_master_set_tc74_mode(I2C_MASTER_NUM, SET_STANBY_VALUE);
+    vTaskDelay(1000 / portTICK_RATE_MS);
     
-    // setup the timer
-    ESP_ERROR_CHECK(timer_config(&ledc_channel));  
-    ledc_set_duty(ledc_channel.speed_mode, ledc_channel.channel, 8191);
-    ledc_update_duty(ledc_channel.speed_mode, ledc_channel.channel);
+    uint32_t dt = 4094; 
+
+    timer_config();
+    ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, dt);
+    ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
 
     while(1) {
 
@@ -103,10 +103,12 @@ void app_main(void)
         // set standby mode for testing (5uA consuption)
         i2c_master_set_tc74_mode(I2C_MASTER_NUM, SET_STANBY_VALUE);
 
+        dt = temperature_value > initial_temp ? 6140 : 2500;
+
         dt = (temperature_value * LEDC_DUTY) / initial_temp;
         ESP_LOGI(TAG,"Duty Cycle is : %d",dt);
 
-        ledc_set_duty(ledc_channel.speed_mode, ledc_channel.channel, dt);
+        ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, dt);
         ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
 
         vTaskDelay(8000 / portTICK_RATE_MS);

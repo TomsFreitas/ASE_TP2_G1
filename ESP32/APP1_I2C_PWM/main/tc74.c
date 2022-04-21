@@ -1,6 +1,12 @@
 #include "tc74.h"
 
 /**
+ * https://github.com/ThomasGeor/esp32_tc74_temperature_sensor/tree/master/main
+ * 
+ * 
+ */
+
+/**
  * @brief i2c master initialization (esp32 as master)
  */
 

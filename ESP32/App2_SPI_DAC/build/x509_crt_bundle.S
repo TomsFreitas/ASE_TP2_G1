@@ -1,4 +1,4 @@
-/* * Data converted from /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
