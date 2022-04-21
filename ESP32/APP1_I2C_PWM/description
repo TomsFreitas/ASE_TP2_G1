@@ -1,0 +1,5 @@
+Uses I2C to read the ambient temperatures and stores the first reading.
+
+The first reading is then stored and uses a 50% duty cycle mark. 
+
+Using simple proportions, if the temperature rises the duty cycle increases and the inverse happens when the temperature drops

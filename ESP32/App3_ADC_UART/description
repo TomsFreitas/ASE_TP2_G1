@@ -1,0 +1,9 @@
+This was a test using the micropython framework. All the main code is in main.py and notes.py stores the relation between frequencies and notes.
+This application sends a PWM Signal trough a speaker which plays the Mario theme song. 
+This signal is also picked up by our ADC which sends it via UART1 to itself because the UART is shorted.
+There are three threads:
+-> One for playing the song
+-> One for reading the UART
+-> One for capturing the PWM signal using the ADC and sending the values via UART
+After this routine the esp enters deepsleep for 10 seconds before starting again.
+ 
