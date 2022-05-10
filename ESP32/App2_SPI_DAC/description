@@ -1,0 +1,3 @@
+Writes 256 bytes of random data capped at 255 on our EEPROM using SPI.
+Applies those random bytes as a voltage through the DAC. 0 = 0v | 255 = 3.3V
+After this the ESP32 enters deepsleep mode and can be woken up using a touch sensor to start the application once again. 
