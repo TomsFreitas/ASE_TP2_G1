@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/efuse/libefuse.a
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/esp_ipc/libesp_ipc.a
@@ -73,6 +74,8 @@
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/main/libmain.a
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/components/libcomponents.a
 =======
+=======
+>>>>>>> Stashed changes
 /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
 /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/efuse/libefuse.a
 /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/esp_ipc/libesp_ipc.a
@@ -146,4 +149,7 @@
 /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/main/libmain.a
 /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/libled_strip.a
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

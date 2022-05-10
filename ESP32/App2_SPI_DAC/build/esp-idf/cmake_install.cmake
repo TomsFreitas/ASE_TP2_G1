@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   include("/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/esp_ringbuf/cmake_install.cmake")
   include("/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/efuse/cmake_install.cmake")
   include("/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/esp_ipc/cmake_install.cmake")
@@ -125,6 +126,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/main/cmake_install.cmake")
   include("/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/components/cmake_install.cmake")
 =======
+=======
+>>>>>>> Stashed changes
   include("/home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/esp_ringbuf/cmake_install.cmake")
   include("/home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/efuse/cmake_install.cmake")
   include("/home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/esp_ipc/cmake_install.cmake")
@@ -209,6 +212,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/wifi_provisioning/cmake_install.cmake")
   include("/home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/main/cmake_install.cmake")
   include("/home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/cmake_install.cmake")
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 endif()

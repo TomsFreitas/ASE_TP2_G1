@@ -495,6 +495,7 @@ __idf_xtensa_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;_
 
 //Value Computed by CMake
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 esp-idf_BINARY_DIR:STATIC=/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf
 
 //Value Computed by CMake
@@ -505,6 +506,18 @@ main_BINARY_DIR:STATIC=/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/bu
 
 //Value Computed by CMake
 main_SOURCE_DIR:STATIC=/home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC
+=======
+blink_BINARY_DIR:STATIC=/home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build
+
+//Value Computed by CMake
+blink_SOURCE_DIR:STATIC=/home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC
+
+//Value Computed by CMake
+esp-idf_BINARY_DIR:STATIC=/home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf
+
+//Value Computed by CMake
+esp-idf_SOURCE_DIR:STATIC=/home/saudade/esp/esp-idf
+>>>>>>> Stashed changes
 =======
 blink_BINARY_DIR:STATIC=/home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build
 

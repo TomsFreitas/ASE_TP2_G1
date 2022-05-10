@@ -33,8 +33,13 @@ rule C_COMPILER__main.2eelf_
 # Rule for linking CXX executable.
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 rule CXX_EXECUTABLE_LINKER__main.2eelf_
   command = $PRE_LINK && /home/toms/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+=======
+rule CXX_EXECUTABLE_LINKER__blink.2eelf_
+  command = $PRE_LINK && /home/saudade/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+>>>>>>> Stashed changes
 =======
 rule CXX_EXECUTABLE_LINKER__blink.2eelf_
   command = $PRE_LINK && /home/saudade/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
@@ -1562,8 +1567,13 @@ rule C_COMPILER____idf_components_
 # Rule for linking C static library.
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 rule C_STATIC_LIBRARY_LINKER____idf_components_
   command = $PRE_LINK && /home/toms/.espressif/tools/cmake/3.20.3/bin/cmake -E rm -f $TARGET_FILE && /home/toms/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /home/toms/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib $TARGET_FILE && $POST_BUILD
+=======
+rule C_STATIC_LIBRARY_LINKER____idf_led_strip_
+  command = $PRE_LINK && /home/saudade/.espressif/tools/cmake/3.20.3/bin/cmake -E rm -f $TARGET_FILE && /home/saudade/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /home/saudade/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib $TARGET_FILE && $POST_BUILD
+>>>>>>> Stashed changes
 =======
 rule C_STATIC_LIBRARY_LINKER____idf_led_strip_
   command = $PRE_LINK && /home/saudade/.espressif/tools/cmake/3.20.3/bin/cmake -E rm -f $TARGET_FILE && /home/saudade/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /home/saudade/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib $TARGET_FILE && $POST_BUILD

@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/install.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/install/strip.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/list_install_components.dir
@@ -679,6 +680,8 @@
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/components/CMakeFiles/edit_cache.dir
 /home/toms/Documents/ASE/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/components/CMakeFiles/rebuild_cache.dir
 =======
+=======
+>>>>>>> Stashed changes
 /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/install/local.dir
 /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/install.dir
 /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/CMakeFiles/install/strip.dir
@@ -1358,4 +1361,7 @@
 /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/CMakeFiles/edit_cache.dir
 /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/CMakeFiles/install.dir
 /home/saudade/Desktop/EGS/ASE_TP2_G1/ESP32/App2_SPI_DAC/build/esp-idf/led_strip/CMakeFiles/list_install_components.dir
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

@@ -1,5 +1,6 @@
 # ninja log v5
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 1	30	1650488925880689926	project_elf_src_esp32.c	1236fb59b1d566c9
 31	155	1650488926020699470	CMakeFiles/bootloader.elf.dir/project_elf_src_esp32.c.obj	a256b86e12a94b73
 8	170	1650488926028700015	esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj	f9fa0861dfff9e21
@@ -124,6 +125,8 @@
 4	71	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	bd66b4e2be7f6184
 4	71	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	bd66b4e2be7f6184
 =======
+=======
+>>>>>>> Stashed changes
 1	39	1649162957423720906	project_elf_src_esp32.c	8e83bcfe85bb9ec0
 5	57	1649162957475720906	esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj	169ea0843852d772
 9	71	1649162957487720906	esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj	93ba4d5f178a6d78
@@ -221,4 +224,7 @@
 1935	2013	1649162959427720898	bootloader.elf	5ace6945e88ebcca
 2013	2156	1649162959571720898	.bin_timestamp	6be89d0b254bd094
 2156	2206	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	c369efd7d2e73d37
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

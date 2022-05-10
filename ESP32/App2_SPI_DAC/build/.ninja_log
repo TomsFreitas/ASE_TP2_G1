@@ -1,5 +1,6 @@
 # ninja log v5
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 20234	20691	1650488938485549156	esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_mbedtls-ec.c.obj	482bdbaeb24eac55
 28730	29008	1650488946798115796	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/port/port_common.c.obj	55900dfe62f7ad06
 30391	30610	1650488948410225687	esp-idf/nghttp/CMakeFiles/__idf_nghttp.dir/nghttp2/lib/nghttp2_helper.c.obj	1a59566934d611b5
@@ -1103,6 +1104,8 @@
 21	104	1650488925820685836	bootloader/bootloader.bin	5d1a19c8e3d063af
 21	104	1650488925820685836	bootloader/bootloader.map	5d1a19c8e3d063af
 =======
+=======
+>>>>>>> Stashed changes
 4	6	1649162953103720923	project_elf_src_esp32.c	3b0f1b6d4d623997
 5	10	1649162953107720923	esp-idf/esp_system/ld/memory.ld	a655218f8b064b0e
 10	33	1649162953131720922	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.obj	2b89d97b7ff0a5ef
@@ -2120,4 +2123,7 @@
 19995	20308	1649162973403720845	blink.elf	560a7b9de55a0088
 20308	20381	1649162973479720845	.bin_timestamp	c1fd0d9b4fe6c2aa
 20381	20406	0	esp-idf/esptool_py/CMakeFiles/app_check_size	cd4d22864ef5f52b
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
