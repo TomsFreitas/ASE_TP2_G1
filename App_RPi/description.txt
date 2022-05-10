@@ -1,0 +1,7 @@
+Idea:
+-> Environmental sensors to capture data (Temp, Humidity, CO2, Noise...)
+-> Post data to Grafana Server to plot over time
+-> If possible, using LORA 
+-> Have some power managment
+
+
