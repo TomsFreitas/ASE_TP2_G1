@@ -1,7 +1,8 @@
-Idea:
--> Environmental sensors to capture data (Temp, Humidity, CO2, Noise...)
--> Post data to Grafana Server to plot over time
--> If possible, using LORA 
--> Have some power managment
+Using several types of environmental sensors (Temperature, humidity, noise activity and light) and a raspberry pi
+it is possible to build a simple environmental logging station.
 
+This project reads sensor data, exposes said data over a REST API and it is then scrapped and stored using Prometheus.
 
+Combined with grafana it is possible to display this data, in a timeseries format, to the end user.
+
+This system is combined with the flexibility and ease of use of docker containers.
